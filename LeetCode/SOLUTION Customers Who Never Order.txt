@@ -1,0 +1,10 @@
+# Write your MySQL query statement below
+SELECT NAME Customers FROM CUSTOMERS WHERE ID NOT IN(SELECT CUSTOMERID FROM ORDERS);
+
+
+
+
+
+This query selects the names of customers from the Customers table where the customer ID is not present in the list of customer IDs from the Orders table. In other words, it retrieves customers who do not have any orders.
+
+The output will be a table with a single column named "Customers" containing the names of customers who never ordered anything.
